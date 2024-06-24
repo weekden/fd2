@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.button-start {
+    top: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff00bf;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.game-board {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: #800080;
+}
+
+.gameboard-logo {
+    position: absolute;
+    font-size: 3rem;
+    bottom: 10%;
+    right: 10%;
+    color: #ff00bf;
+}
+
+.center-line {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    z-index: 2;
+    background-color: #ff00bf;
+    left: calc(50% - 2px);
+}
+
+.center-cyrcleL {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #ff00bf;
+    border-radius: 50%;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+} 
+
+.center-cyrcleM {
+    position: absolute;
+    width: 192px;
+    height: 192px;
+    background-color: #800080;
+    border-radius: 50%;
+    top: calc(50% - 96px);
+    left: calc(50% - 96px);
+} 
+
+.game-ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    background-color: #ffff00;
+    border-radius: 50%;
+    top: calc(50% - 10px);
+    left:calc(50% - 10px);
+   
+}
+
+.hands {
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    background-color: #00ff00; 
+} 
+
+.game-lefthand {
+    left: 0;
+    top: calc(50% - 40px);
+}
+
+.game-righthand {
+    right: 0;
+    top: calc(50% - 40px);
+}
+
+.downcounter-elem, .message-elem {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 5;
+    width: 400px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    top: 20%;
+    left: calc(50% - 200px);
+}
+
+.post-message {
+    font-size: 1rem;
+    margin-top: 10px;
+} 
+
+.count {
+    font-size: 3rem;
+}
+
+.animation, .hands-animation {
+    transition-duration: 0.5s;
+}

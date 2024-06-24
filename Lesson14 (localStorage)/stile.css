@@ -1,0 +1,68 @@
+
+body {
+    background-color: gainsboro;
+}
+
+.form__check-user,
+.form__data-birth,
+.form__down-timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 15px;
+    width: 300px;
+    height: 280px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.form__check-user:first-child,
+.form__data-birth:first-child,
+.form__down-timer{
+    font-size: 20px;
+}
+
+.form__check-user p:last-child {
+    font-size: 12px;
+}
+input,
+select,
+button, 
+#clear-btn {
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #cc55dc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#clear-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.hide-elem {
+    display: none;
+}
+
+.notvisible-elem{
+    visibility: hidden;
+}
+
+.disabled-btn {
+    opacity: 0.5;
+    cursor: auto;
+}

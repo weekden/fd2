@@ -1,0 +1,44 @@
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+}
+.recept {
+    margin: 40px;
+}
+.recept_info-method{
+    width: 500px;
+}
+.recept_info-title *{
+    display: inline-block;
+}
+
+.recept_info-title span {
+    font-size: 1.2rem;
+}
+
+.recept_info-ingredients ul,
+.recept_info-method :first-child,
+.recept_list :first-child {
+    font-size: 1.2rem;
+    font-style: oblique;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.recept_info-ingredients li {
+    line-height: 1.5rem;
+    font-weight: normal;
+    margin-left:20px ;
+}
+
+.btn {
+padding: 10px 40px;
+margin: 20px;
+font-size: 16px;
+cursor: pointer;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+}
+

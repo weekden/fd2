@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <button class="btn" onclick="coctailStorage.addCoctailRecipe()">Ввод рецепта</button>
+    <button class="btn" onclick="coctailStorage.getCoctailInfo()">Рецепт напитка</button>
+    <button class="btn" onclick="coctailStorage.deleteCoctail()">Удаление рецепта</button>
+    <button class="btn" onclick="coctailStorage.getCoctailArray()">Перечень всех коктейлей</button>
+    <div class="recept">
+        <div class="recept_info-title"></div>
+        <div class="recept_info-ingredients"></div>
+        <div class="recept_info-method"></div>
+    </div>
+    <div class="recept_list"></div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

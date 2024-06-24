@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+ 
+    --clock-size: calc(var(--size) * 1px); 
+}
+
+.clock-table {
+    position: relative;
+    width: var(--clock-size); 
+    height: var(--clock-size);
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    
+}
+
+.cyrcle-number {
+    position: absolute;
+    width: calc(var(--clock-size) / 10);
+    height: calc(var(--clock-size) / 10);
+    border-radius: 50%;
+    background-color: #989898;
+
+}
+
+.clock-number {
+    position: absolute;
+    font-size: calc(var(--clock-size) * 0.05);
+    color: #333333;
+    font-weight: bold;
+}
+
+.hour-hand {
+    position: absolute;
+    height: calc(var(--clock-size) * 0.32);
+    width: calc(var(--clock-size) / 55);
+    border: none;
+    border-radius: 10px;
+    background-color: #333333;
+    top: calc(50% - var(--clock-size) * 0.26); 
+    left: calc(50% - var(--clock-size) / 110); 
+    transform-origin: 50% calc(50% + var(--clock-size) * 0.1);
+} 
+
+.minute-hand {
+    position: absolute;
+    height: calc(var(--clock-size) * 0.36);
+    width: calc(var(--clock-size) / 80);
+    border: none;
+    border-radius: 10px;
+    background-color: #333333;
+    top: calc(50% - var(--clock-size) * 0.3); 
+    left: calc(50% - var(--clock-size) / 160); 
+    transform-origin: 50% calc(50% + var(--clock-size) * 0.12);
+}
+
+
+.second-hand {
+    position: absolute;
+    height: calc(var(--clock-size) * 0.384);
+    width: calc(var(--clock-size) / 200);
+    border: none;
+    border-radius: 10px;
+    background-color: #333333;
+    top: calc(50% - var(--clock-size) * 0.33); 
+    left: calc(50% - var(--clock-size) / 400); 
+    transform-origin: 50% calc(50% + var(--clock-size) * 0.138);
+}
+
+.clock-table__center {
+    position: absolute;
+    width: calc(var(--clock-size) / 30);
+    height: calc(var(--clock-size) / 30);
+    border-radius: 50%;
+    background-color: #333333;
+    top: calc(50% - var(--clock-size) / 60);
+    left: calc(50% - var(--clock-size) / 60);
+}
+
+.zone-selects {
+    display: flex;
+    width: 100%;
+    height: calc(var(--clock-size) * 0.1);
+    padding: calc(var(--clock-size) / 60);
+    justify-content: space-around;
+ 
+}
+
+.time-zone {
+    z-index: 20;
+}
+
+#clocks-container {
+    display: flex;
+    width: fit-content;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.clock-container {
+    padding: calc(var(--clock-size) / 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;   
+}
+
+.digital-clock, .digital-date {
+    position: absolute;
+    text-align: center;
+    font-size: calc(var(--clock-size)*0.0375);
+    width: calc(var(--clock-size) / 3);
+    height: auto;
+    top: calc(50% - var(--clock-size) / 5);
+    left: calc(50% - var(--clock-size) / 6);
+}
+
+.digital-date {
+    top: calc(50% - var(--clock-size) / 3.55);
+}
+
+.clock-logo {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: calc(var(--clock-size)*0.025);
+    width: calc(var(--clock-size) / 6);
+    height: calc(var(--clock-size) / 20);
+    top: calc(50% - var(--clock-size) / -2.15);
+    left: calc(50% - var(--clock-size) / 12);
+}
+
+.city {
+    font-size: calc(var(--clock-size) / 20) ;
+    
+}
+
+.btn-stop, .btn-start {
+    background-color: #795b98;
+    color: #fff;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: calc(var(--clock-size) / 30);
+    transition: background-color 0.3s ease;
+}
+
+.btn-stop:hover, .btn-start:hover {
+    background-color: #9d64a0;
+}
+
+.zone-selects select {
+    appearance: none;
+    width: 50%;
+    font-size: calc(var(--clock-size) / 25);
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: rgb(215, 215, 215);
+    cursor: pointer;
+}
+
+.zone-selects option, .zone-selects select:checked {
+    font-size: calc(var(--clock-size) / 25);
+}
+
+
